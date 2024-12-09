@@ -18,17 +18,26 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue)
       ),
       home: HomePage(),
-
     );
   }
 }
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(),
+    return SafeArea(
+      child: Scaffold(
+        body: Column(
+          children: [
+            _AppBar()
+          ],
+        ),
+      ),
+    );
+  }
+  Widget _AppBar(){
+    return Container(
+      child: Text("Hello"),
     );
   }
 }
