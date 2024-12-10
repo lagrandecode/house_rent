@@ -1,7 +1,7 @@
 
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:house_rent/widget/custom_appbar.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,32 +12,24 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        primaryColor: Color(0xff811b83),
-        scaffoldBackgroundColor: Colors.white,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue)
-      ),
       home: HomePage(),
     );
   }
 }
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: Column(
-          children: [
-            _AppBar()
-          ],
-        ),
+    return Scaffold(
+      appBar: CustomAppbar(),
+      body: Column(
+        children: [
+
+
+        ],
       ),
-    );
-  }
-  Widget _AppBar(){
-    return Container(
-      child: Text("Hello"),
     );
   }
 }
