@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:house_rent/widget/custom_appbar.dart';
+import 'package:house_rent/widget/searchbar.dart';
+import 'package:house_rent/widget/welcome.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,11 +26,15 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppbar(),
-      body: Column(
-        children: [
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            WelcomeText(),
+            Search(),
 
 
-        ],
+          ],
+        ),
       ),
     );
   }
