@@ -28,8 +28,10 @@ class HomePage extends StatelessWidget {
       appBar: CustomAppbar(),
       body: SingleChildScrollView(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             WelcomeText(),
+            SizedBox(height: 10.0,),
             Search(),
 
 
