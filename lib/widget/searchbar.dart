@@ -8,6 +8,7 @@ class Search extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(left: 10.0,right: 10.0),
 
       child: TextField(
         decoration: InputDecoration(
@@ -18,11 +19,11 @@ class Search extends StatelessWidget {
             borderRadius: BorderRadius.circular(10.0),
 
           ),
-            hintText: "Search Here...",hintStyle: const TextStyle(color: Colors.black),
-          prefixIcon: Container(
-            padding: EdgeInsets.all(15),
-
-          )
+            hintText: "Search Here...",hintStyle: const TextStyle(color: Colors.black,),
+          // prefixIcon: Container(
+          //   padding: EdgeInsets.all(15),
+          //
+          // )
         ),
       ),
     );

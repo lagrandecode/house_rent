@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:house_rent/widget/custom_appbar.dart';
+import 'package:house_rent/widget/grid.dart';
 import 'package:house_rent/widget/searchbar.dart';
 import 'package:house_rent/widget/welcome.dart';
 
@@ -33,6 +34,9 @@ class HomePage extends StatelessWidget {
             WelcomeText(),
             SizedBox(height: 10.0,),
             Search(),
+            SizedBox(height: 10.0,),
+            Grid(),
+            // Grid(),
 
 
           ],
