@@ -16,7 +16,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSize{
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           IconButton(onPressed: (){}, icon: SvgPicture.asset(menuIcon)),
-          CircleAvatar(backgroundImage: AssetImage(avarta),)
+          CircleAvatar(backgroundImage: AssetImage("assets/images/avatar.jpeg",),)
         ],
       ),
     ));

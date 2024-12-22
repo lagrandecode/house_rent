@@ -1,5 +1,7 @@
 
 
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:house_rent/widget/custom_appbar.dart';
 import 'package:house_rent/widget/grid.dart';
@@ -21,11 +23,13 @@ class MyApp extends StatelessWidget {
 }
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  HomePage({super.key});
+  // bool phonePlatform = true;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // backgroundColor: phonePlatform == Platform.isIOS ? Colors.white.withOpacity(0.5) : Colors.white,
       appBar: CustomAppbar(),
       body: SingleChildScrollView(
         child: Column(
@@ -36,6 +40,7 @@ class HomePage extends StatelessWidget {
             Search(),
             SizedBox(height: 10.0,),
             Grid(),
+            SizedBox(height: 10.0)
             // Grid(),
 
 
