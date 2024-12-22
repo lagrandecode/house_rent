@@ -42,8 +42,6 @@ class HomePage extends StatelessWidget {
             Grid(),
             SizedBox(height: 10.0)
             // Grid(),
-
-
           ],
         ),
       ),
