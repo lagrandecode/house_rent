@@ -6,10 +6,10 @@ class Grid extends StatelessWidget {
   Grid({super.key});
 
   final List<GridModel> grid = GridModel.generateGrid();
-
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(left: 10.0,right: 10.0),
       height: MediaQuery.of(context).size.height,
       child: GridView.builder(
         itemCount: grid.length,

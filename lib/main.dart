@@ -3,6 +3,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:house_rent/widget/bottom_navigator.dart';
 import 'package:house_rent/widget/custom_appbar.dart';
 import 'package:house_rent/widget/grid.dart';
 import 'package:house_rent/widget/searchbar.dart';
@@ -45,6 +46,7 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNv(),
     );
   }
 }
