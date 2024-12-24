@@ -1,4 +1,4 @@
-import 'dart:ffi';
+
 
 class GridModel {
   late String name;
@@ -16,7 +16,6 @@ class GridModel {
       GridModel("Estate4", "assets/images/h4.png", "15 Main Street, Lagos", 3.75),
       GridModel("Estate5", "assets/images/h5.png", "15 Main Street, Lagos", 3.75),
       GridModel("Estate6", "assets/images/h6.png", "15 Main Street, Lagos", 3.75),
-      // GridModel("Estate3", "assets/images/h3.png", "15 Main Street, Lagos", 3.75),
     ];
   }
 }

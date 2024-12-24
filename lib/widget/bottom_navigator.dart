@@ -15,8 +15,8 @@ class _BottomNvState extends State<BottomNv> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10.0),
-      margin: EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
+      padding: const EdgeInsets.all(10.0),
+      margin: const EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: List.generate(
