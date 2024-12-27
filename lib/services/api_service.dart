@@ -12,11 +12,11 @@ class ApiService{
     final response = await http.get(Uri.parse(baseUrl));
     if(response.statusCode == 200){
       final List<dynamic> data = json.decode(response.body);
-      // print(data);
       return data.map((json)=>GridModel.fromJson(json)).toList();
     }
     else {
       throw Exception('failed to load grids');
+
     }
   }
 }
