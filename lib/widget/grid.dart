@@ -64,7 +64,7 @@ class _GridState extends State<Grid> {
                     children: [
                       GestureDetector(
                         onTap: (){
-                          Provider.of<ListProvider>(context,listen: false).addName(grid[index].name!);
+                          Provider.of<ListProvider>(context,listen: false).addItems(grid[index].name!,'http://10.0.0.63:8000/${grid[index].image}',grid[index].address!);
                           Navigator.of(context).push(MaterialPageRoute(builder: (context)=>const SecondScreen()));
                         },
                         child: Image.network(

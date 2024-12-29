@@ -13,15 +13,24 @@ class GridProvider extends ChangeNotifier{
 }
 
 class ListProvider extends ChangeNotifier{
-  final List<String> _names = [];
+  final List<Map<String, String>> _names = [];
 
-  List<String> get names {
+  List<Map<String, String>> get names {
     return _names;
   }
 
-  void addName(String addNames){
-    _names.add(addNames);
+  void addItems(String addNames, String addImages, String addAddress){
+    _names.add({'name':addNames,'image':addImages,'address':addAddress});
     notifyListeners();
+  }
+}
 
+class ImageProviderView extends ChangeNotifier{
+  final List<String> _image = [];
+  List<String> get image => _image;
+
+  void addImage(String newImage){
+    _image.add(newImage);
+    notifyListeners();
   }
 }
